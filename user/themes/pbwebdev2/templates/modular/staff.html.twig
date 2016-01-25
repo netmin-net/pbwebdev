@@ -1,0 +1,22 @@
+<div class="container staff">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>{{ page.header.title }}</h1>
+            {{ content }}
+        </div>
+    </div>
+
+    <div class="row">
+        <h2>Our Awesome Team</h2>
+    {% for item in page.header.staff %}
+        <div class="col-xs-12 col-sm-4 col-md-3 ">
+            <div class="content">
+                <img src="{{ page.media[item.image].url }}" />
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+

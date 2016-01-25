@@ -1,0 +1,65 @@
+
+
+// List Reset
+%list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+// Vertical Centering
+%vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+// Columns
+@mixin columns($columns) {
+	width: percentage(1/$columns);
+}
+
+// Float with margin variable
+@mixin float($direction, $margin: 0) {
+	float: $direction;
+	margin-#{opposite-direction($direction)}: $margin;
+}
+
+@mixin transform-scale($scale) {
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -o-transform: scale($scale);
+  -ms-transform: scale($scale);
+  transform: scale($scale);
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+@mixin box-shadow($args...) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

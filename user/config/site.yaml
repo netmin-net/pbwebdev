@@ -1,0 +1,20 @@
+title: 'PB Web Development'
+author:
+  name: 'PB Web Development'
+  email: mail@pbwebdev.com
+taxonomies:
+  - category
+  - tag
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects:
+  /redirect-test: /
+  '/old/(.*)': /new/$1
+routes:
+  /something/else: /blog/sample-3
+  '/new/(.*)': /blog/$1
+blog:
+  route: /blog

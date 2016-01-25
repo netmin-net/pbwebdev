@@ -1,0 +1,75 @@
+{% set image1 = page.media['slider_01.jpg'] %}
+{% set image2 = page.media['slider_02.jpg'] %}
+{% set image3 = page.media['slider_03.jpg'] %}
+
+<div id="full_width_carousel" class="carousel slide animate_text full_width_carousel_wrapper" data-ride="carousel"
+     data-interval="8000" data-pause="hover">
+
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+            {{ image1.html }}
+            <div class="carousel-caption full_width_carousel_caption" data-animation="animated fadeInUp">
+                <h1 data-animation="animated fadeInDown">Middlemount Coal</h1>
+                <h2 data-animation="animated fadeInDown">We went to the centre of the earth with Middlemount Coal</h2>
+                <a href="{{ base_url }}/our-work/middlemount-coal" class="full_width_carousel_button_colored"
+                   data-animation="animated fadeInDown">Read More</a>
+            </div>
+        </div>
+
+        <div class="item">
+            {{ image2.html }}
+            <div class="carousel-caption full_width_carousel_caption full_width_carousel_caption_right"
+                 data-animation="animated fadeInUp">
+                <h1 data-animation="animated fadeInDown">ellaslist</h1>
+                <h2 data-animation="animated fadeInDown">Helping connect parents with amazing experiences in their local
+                    area</h2>
+                <a href="{{ base_url }}/our-work/ellaslist" class="full_width_carousel_button_colored"
+                   data-animation="animated fadeInDown">Read More</a>
+            </div>
+        </div>
+
+        <div class="item">
+            {{ image3.html }}
+            <div class="carousel-caption full_width_carousel_caption full_width_carousel_caption_center"
+                 data-animation="animated fadeInUp">
+                <h1 data-animation="animated fadeInDown">I Am Infusion</h1>
+                <h2 data-animation="animated fadeInDown">Sipping tea and creating new experiences with I Am
+                    Infusion</h2>
+                <a href="{{ base_url }}/our-work/i-am-infusion" class="full_width_carousel_button_colored"
+                   data-animation="animated fadeInDown">Read More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--======= Navigation Buttons =========-->
+
+    <!--======= Left Button =========-->
+    <a class="left carousel-control full_width_carousel_control_left" href="#full_width_carousel" role="button"
+       data-slide="prev">
+        <span class="fa fa-angle-double-left full_width_carousel_control_icons" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <!--======= Right Button =========-->
+    <a class="right carousel-control full_width_carousel_control_right" href="#full_width_carousel" role="button"
+       data-slide="next">
+        <span class="fa fa-angle-double-right full_width_carousel_control_icons" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+
+
+{#<div class="modular-row slideshow" style="background:url({{ page.media[page.header.background].url }}) no-repeat;background-size: cover;">#}
+    {#<div class="container">#}
+        {#<div class="content">#}
+            {#<h2>{{ page.header.title }}</h2>#}
+            {#{{ content }}#}
+            {#{% for button in page.header.buttons %}#}
+                {#<a class="btn btn-large btn-primary" href="{{ base_url_relative }}{{ button.url }}">{{ button.text }}</a>#}
+            {#{% endfor %}#}
+        {#</div>#}
+    {#</div>#}
+{#</div>#}

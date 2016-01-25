@@ -1,0 +1,41 @@
+<section id="portfolio" class="wrapper style1 container special">
+
+    <header class="special container">
+        <span class="icon fa-{{ page.header.icon }}"></span>
+        <h2>{{ page.header.title }}</h2>
+        {{ content }}
+    </header>
+
+    <div class="row">
+        {% for item in page.header.features %}
+            <div class="4u 12u(narrower)">
+                <section>
+                    {% if item.icon %}
+                    <span class="icon featured fa-{{ item.icon }}"></span>
+                    {% endif %}
+                    <header>
+                        <h3>{{ item.title }}</h3>
+                    </header>
+                    <p>{{ item.text }}</p>
+                    {% if item.buttons %}
+                    <footer>
+                        <ul class="buttons">
+                            {% for button in item.buttons %}
+                                <li><a href="{{ button.url }}" class="button small scrolly">{{ button.text }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </footer>
+                    {% endif %}
+                </section>
+            </div> 
+        {% endfor %}
+    </div>
+
+    <footer>
+        <ul class="buttons">
+            {% for button in page.header.buttons %}
+                <li><a href="{{ button.url }}" class="button scrolly">{{ button.text }}</a></li>
+            {% endfor %}
+        </ul>
+    </footer>
+</section>

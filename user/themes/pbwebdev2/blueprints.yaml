@@ -1,0 +1,27 @@
+name: Pbwebdev
+version: 1.0
+description: "PB Web Development Theme"
+icon: empire
+author:
+  name: PB Web Development
+  email: mail@pbwebdev.com.au
+  url: http://pbwebdev.com
+homepage: https://github.com/pbwebdev/pbwebdev
+demo: http://pbwebdev.com
+keywords: PB Web Development
+bugs: https://github.com/pbwebdev/pbwebdev/issues
+license: GPLv2
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool

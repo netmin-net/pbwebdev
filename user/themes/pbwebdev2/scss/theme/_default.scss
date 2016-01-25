@@ -1,0 +1,562 @@
+/* images responsive */
+img {
+    max-width: 100%;
+}
+
+/* Constrain the width */
+.container {
+  width: auto;
+  max-width: 960px;
+  padding: 0 15px;
+}
+
+/* Center the footer text */
+.container .text-muted {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Make branding more obvious */
+.navbar .navbar-brand {
+	color: #333;
+	font-size: 26px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+}
+
+.header {
+    @include linear-gradient(darken($header-bg,5%), lighten($header-bg,5%));
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: center;
+    color: $header-text;
+
+     h1 {
+        font-size: 40px;
+        color: $header-title;
+        margin-top: 0;
+        margin-bottom: 0;
+       text-align: left;
+        @include breakpoint(tablet-range) {
+            font-size: 40px;
+        }
+        @include breakpoint(mobile-only) {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+        font-weight: normal;
+    }
+
+    .btn {
+         font-size: 22px;
+        padding: 10px 30px;
+        margin-top: 30px;
+        border-radius: $border-radius;
+        box-shadow: none;
+        border: 0;
+    }
+
+}
+.navbar{
+  margin-bottom:0;
+}
+.navbar-collapse{
+  background: $white;
+}
+.navbar-default{
+  background: $white;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height:60px;
+  font-size:18px;
+  a{
+    font-family: 'Rokkitt', sans-serif;
+  }
+  a:hover{
+    color: $core-accent;
+  }
+
+  .nav > li.red > a{
+    color: $core-accent;
+  }
+
+  .nav>li>a{
+    padding-top: 21px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 10px;
+  }
+  .nav>li>a:hover, .navbar-nav>.active>a:hover{
+    color: $core-accent;
+    border-bottom: 1px solid $core-accent;
+    background: none;
+  }
+  .navbar-nav>.active>a, .navbar-nav>.active>a:focus{
+    color: $core-accent;
+    background:none;
+    border-bottom: 1px solid $white;
+  }
+
+}
+
+.main{
+  padding-top:0em;
+}
+
+/****************************
+* Home page styles
+*****************************/
+
+//SLIDE AREA
+.slideshow{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 10em;
+  height: 30em;
+
+  .content{
+    text-align: center;
+    color: $white;
+    background: rgba(35,35,35,.5);
+    width: 70%;
+    padding: 5%;
+    margin: 60px auto;
+    h2{
+      margin-bottom: 0.2em;
+      text-shadow: 2px 2px $secondary-accent;
+      font-size: 3em;
+    }
+    .btn{
+      margin-top:1em;
+    }
+  }
+
+}
+
+//SLOGAN
+.slogan{
+  color: $white;
+  background: $core-accent;
+  padding:4em 0 5em;
+  text-align: center;
+  h2{
+    font-size: $core-font-size * 2;
+  }
+}
+
+// OUR WORK
+.our-work{
+  padding:3em 0 0 0;
+  h2{
+    text-align: center;
+  }
+  .row{
+    margin: 0;
+  }
+
+  .col-xs-12, .col-sm-6, .col-md-4{
+    padding:0;
+    margin:0;
+  }
+  .btn{
+  }
+  .intro{
+    text-align: center;
+    margin-bottom:2em;
+  }
+  footer{
+    text-align: center;
+    background: $footer-bg;
+    padding: 3em;
+  }
+  .view {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  .view .mask, .view .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .view img {
+    display: block;
+    position: relative;
+  }
+  .view h3 {
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+  }
+  .view p {
+    font-style: italic;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+  }
+  .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    @include box-shadow(0 0 1px #000);
+
+  }
+  .view a.info:hover {
+    @include box-shadow(0 0 5px #000);
+  }
+
+  .view-tenth img {
+    @include transform-scale(1);
+    @include transition(all .7s ease-in-out);
+    width: 100%;
+  }
+  .view-tenth .mask {
+    background: $white;
+    @include transition(all .3s linear);
+    @include opacity(0);
+  }
+  .view-tenth h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 30% 20% 0px 20%;
+    @include transform-scale(1);
+    @include transition(all 0.5s linear);
+    @include opacity(0);
+    color: $secondary-accent;
+  }
+  .view-tenth p {
+    color: $secondary-accent;
+    @include transform-scale(1);
+    @include transition(all 0.5s ease-in-out);
+    @include opacity(0);
+  }
+  .view-tenth a.info {
+    @include transform-scale(1);
+    @include transition(all 0.5s linear);
+    @include opacity(1);
+  }
+  .view-tenth:hover img {
+    @include transform-scale(1.02);
+    @include transition(all 3s linear);
+    @include opacity(1);
+  }
+  .view-tenth:hover .mask {
+    @include opacity(0.5);
+  }
+  .view-tenth:hover h3,.view-tenth:hover p,.view-tenth:hover a.info {
+    @include transform-scale(1);
+    @include opacity(1);
+
+  }
+
+}
+
+
+
+.clients{
+  color: $white;
+  background: $third-accent;
+  text-align: center;
+  padding:3em 0;
+}
+
+// WHAT WE DO
+.what-we-do{
+  padding:3em 0;
+
+  h2{
+    text-align: center;
+  }
+  span{
+  }
+
+  .featured{
+    @include opacity(0.6);
+    text-align: center;
+  }
+
+  .block{
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  footer{
+    text-align: center;
+  }
+}
+
+//ABOUT
+.about{
+  background: $third-accent;
+
+  h2{
+    text-align: center;
+  }
+  .tag{
+    text-align: center;
+    padding:0 4em;
+    h3{
+      border-bottom: 1px solid $core-accent;
+      padding-bottom: 2em;
+    }
+  }
+  footer{
+    margin:3em;
+    text-align: center;
+  }
+}
+
+.staff{
+  h1{
+    text-align: center;
+    span{
+      color: $core-accent;
+    }
+  }
+  h2{
+    text-align: center;
+    margin: 2em auto;
+  }
+  margin:2em auto;
+  .content{
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+
+
+
+//Our Work
+.work{
+  h2{
+    span{
+      color: $core-accent;
+    }
+  }
+  .tag h2{
+    text-align: center;
+  }
+  .list-item{
+    min-height:380px;
+    margin: 10px 0 5px;
+    h3{
+      text-align: center;
+    }
+  }
+
+}
+
+
+// ADDTHIS settings
+.social-sharing{
+  margin: 0.5em 0;
+}
+
+// DISQUS Comment Styles
+#disqus_thread{
+  padding: 2em 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+
+
+/****************************
+* SERVICES PAGES
+*****************************/
+.services{
+  h1{
+    text-align: left;
+  }
+  h2{
+    span{
+      color: $core-accent;
+    }
+  }
+  h2.title{
+    text-align: center;
+  }
+
+  .list-item{
+    margin:10px 0 20px;
+    min-height: 230px;
+  }
+  .list-blog-header{
+    text-align: center;
+    .fa{
+      @include opacity(0.5);
+    }
+    .fa:hover{
+      @include opacity(1);
+      @include transition(all 0.2s linear);
+    }
+  }
+}
+
+
+
+
+
+//CONTACT US PAGE
+.contact{
+  margin-bottom: 2em;
+  span.fa{
+    width:20px;
+  }
+  h1{
+    margin-top: 1em;
+  }
+}
+#contact{
+  label{
+    width: 100%;
+  }
+  input[type=text], select, textarea{
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
+.thanks{
+  padding:2em 0 4em;
+  min-height: 300px;
+  text-align: center;
+
+  ul{
+    li{
+      list-style: none;
+      display: inline-block;
+      font-size:32px;
+      padding:0 8px;
+    }
+  }
+
+}
+
+.getQuote{
+  background:$core-accent;
+  color: $white;
+  text-align: center;
+  p{
+    padding:0;
+    margin: 0;
+    line-height: 4em;
+  }
+    h3{
+  }
+  .btn-primary{
+    border: $white 1px solid;
+    padding: 7px 12px;
+    background: transparent;
+    color: $white;
+    margin:auto 1em;
+  }
+  .btn-primary:hover{
+    border: $black 1px solid;
+    padding: 7px 12px;
+    background: $secondary-accent;
+    color: $white;
+  }
+}
+
+.footer{
+  background-color: $footer-bg;
+  margin-top:0;
+  padding:2em 0;
+  font-size: 14px;
+
+  ul{
+    padding:0 0 1em 0;
+  }
+  li{
+    margin-left:0;
+    list-style: none;
+    margin-bottom: 0.3em;
+  }
+  .contact{
+    margin-bottom:0;
+    .fa{
+      color: $third-accent;
+    }
+  }
+  .social{
+    li{
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 0.5em;
+    }
+
+    li .fa-facebook:hover{
+      color: #3b5998;
+      @include transition(all 0.3s linear);
+    }
+    li .fa-twitter:hover{
+      color: #4099FF;
+      @include transition(all 0.3s linear);
+    }
+    li .fa-linkedin:hover{
+      color: #007bb5;
+      @include transition(all 0.3s linear);
+    }
+    li .fa-google-plus-square:hover{
+      color: #dd4b39;
+      @include transition(all 0.3s linear);
+    }
+
+    li:last-child{
+      margin-right:none;
+    }
+  }
+}
+
+li .fa-facebook:hover{
+  color: #3b5998;
+  @include transition(all 0.3s linear);
+}
+li .fa-twitter:hover{
+  color: #4099FF;
+  @include transition(all 0.3s linear);
+}
+li .fa-linkedin:hover{
+  color: #007bb5;
+  @include transition(all 0.3s linear);
+}
+li .fa-google-plus-square:hover{
+  color: #dd4b39;
+  @include transition(all 0.3s linear);
+}

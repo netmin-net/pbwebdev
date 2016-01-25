@@ -1,0 +1,12 @@
+email: buipy001@gmail.com
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Peter Bui'
+title: Director
+language: en
+authenticated: true
+hashed_password: $2y$10$Ox8qjCWmvJV9vqKy3rPqN.e8I2pSxCC99nXL3jlOf9Lu5gGGL9giC

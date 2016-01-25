@@ -1,0 +1,11 @@
+<div class="modular-row about-content">
+    <div class="container">
+        <div class="content col-xs-12">
+            <h2>{{ page.header.title }}</h2>
+            {{ content }}
+            {% for button in page.header.buttons %}
+                <a class="btn btn-large btn-primary" href="{{ base_url_relative }}{{ button.url }}">{{ button.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

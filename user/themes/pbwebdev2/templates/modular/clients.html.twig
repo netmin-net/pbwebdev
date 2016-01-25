@@ -1,0 +1,15 @@
+<div class="modular-row clients hidden-xs">
+    <div class="container">
+        {% for row in page.header.portfolio|batch(4) %}
+            <div class="row">
+                {% for item in row %}
+                    <div class="col-xs-12 col-sm-3">
+                        <section>
+                            <a href="{{ item.link }}" class="image featured"><img src="{{ page.media[item.image].url }}" alt="{{ item.title }}" /></a>
+                        </section>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

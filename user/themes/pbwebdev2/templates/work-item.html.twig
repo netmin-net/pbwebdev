@@ -1,0 +1,35 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% set base_url = page.parent.url %}
+    {% set feed_url = base_url %}
+
+    {% if base_url == '/' %}
+        {% set base_url = '' %}
+    {% endif %}
+
+    {% if base_url == base_url_relative %}
+        {% set feed_url = base_url~'/'~page.parent.slug %}
+    {% endif  %}
+
+	{% block content %}
+        <div class="container">
+            {% set blog_image = page.parent.media.images|first %}
+
+            {% if blog_image %}
+                <div class="flush-top blog-header blog-header-image" style="background: {{ page.parent.header.bg_color }} url({{ blog_image.url }}) no-repeat right;">
+                    <h1>{{ page.title }}</h1>
+                </div>
+            {% endif %}
+		    <div class="">
+                <div class="work">
+					{% if config.plugins.breadcrumbs.enabled %}
+						{% include 'partials/breadcrumbs.html.twig' %}
+					{% endif %}
+
+    			    {% include 'partials/work_item.html.twig' with {'blog':page.parent, 'truncate':false, 'big_header':true} %}
+    			</div>
+    		</div>
+        </div>
+	{% endblock %}
+
+{% endembed %}

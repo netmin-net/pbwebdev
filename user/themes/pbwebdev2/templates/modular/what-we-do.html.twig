@@ -1,0 +1,39 @@
+<section id="services" class="wrapper what-we-do">
+    <div class="container">
+        <h2>{{ page.header.title }}</h2>
+
+        {{ content }}
+
+    <div class="row">
+        {% for item in page.header.features %}
+            <div class="col-xs-12 col-md-4 block">
+                <section>
+                    {% if item.icon %}
+                        <span class="fa fa-4x featured fa-{{ item.icon }}"></span>
+                    {% endif %}
+                    <header>
+                        <h3>{{ item.title }}</h3>
+                    </header>
+                    <p>{{ item.text }}</p>
+                    {% if item.buttons %}
+                        <footer>
+                            <ul class="buttons">
+                                {% for button in item.buttons %}
+                                    <li><a href="{{ button.url }}" class="button small scrolly">{{ button.text }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </footer>
+                    {% endif %}
+                </section>
+            </div>
+        {% endfor %}
+    </div>
+
+
+        <footer>
+            {% for button in page.header.buttons %}
+                <a href="{{ button.url }}" class="btn btn-large btn-primary">{{ button.text }}</a>
+            {% endfor %}
+        </footer>
+    </div>
+</section>

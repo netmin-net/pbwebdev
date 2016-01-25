@@ -1,0 +1,39 @@
+<div class="list-item col-sm-4 col-md-3">
+
+    {% set header_image = page.header.header_image|defined(true) %}
+    {% set header_image_width  = page.header.header_image_width|defined(300) %}
+    {% set header_image_height = page.header.header_image_height|defined(300) %}
+    {% set header_image_file = page.header.header_image_file %}
+
+    <div class="list-blog-header">
+        {% if big_header %}
+        <a href="{{ page.url }}">{{ page.media.images|first.cropResize(900,600).html('','blog-header-image') }}</a>
+        {% else %}
+            {% if header_image %}
+                {% if header_image_file %}
+                    {% set header_image_media = page.media.images[header_image_file] %}
+                {% else %}
+                    {% set header_image_media = page.media.images|first %}
+                {% endif %}
+                <a href="{{ page.url }}">{{ header_image_media.cropZoom(header_image_width, header_image_height).html }}</a>
+            {% endif %}
+        {% endif %}
+
+
+        <a href="{{ page.url }}"><span class="fa fa-4x {{ page.header.icon }}"></span></a>
+
+        {% if page.header.link %}
+            <h3>
+                {% if page.header.continue_link is not sameas(false) %}
+                <a href="{{ page.url }}"><i class="fa fa-angle-double-right"></i></a>
+                {% endif %}
+                <a href="{{ page.header.link }}">{{ page.title }}</a>
+            </h3>
+        {% else %}
+            <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+        {% endif %}
+
+        <p>{{ page.header.summary }}</p>
+
+    </div>
+</div>

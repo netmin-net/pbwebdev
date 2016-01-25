@@ -1,0 +1,48 @@
+//Font
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Rokkitt);
+
+$font-family-sans-serif: 'Open Sans', 'Arial', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-family-header: 'Rokkitt', 'Helvetica', sans-serif;
+$font-family-base: $font-family-sans-serif ;
+$core-font-size: 16px;
+
+//colors
+$core-accent:   #e10204;
+$secondary-accent: #444;
+$third-accent: #dad2d2;
+$footer-bg:		#222;
+$border-color: 	#f0f0f0;
+$header-bg:     $secondary-accent;
+$header-text:   lighten($header-bg, 55%);
+$header-title:  #f0f0f0;
+$text-bg:           #fff;
+$text-text:           #444;
+$white: #fff;
+$black: #000;
+
+//spacing
+$header-height: 50px;
+$padding-vert: 30px;
+$padding-horiz: 30px;
+$content-padding: 15px;
+$core-font-size: 16px;
+
+$border-radius: 3px;
+
+.btn-large{
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+.mauticform-button, .btn-primary{
+  background: $core-accent;
+  color: $white;
+  border: 1px darken($core-accent, 10%) solid;
+}
+.mauticform-button:hover, .btn-primary:hover{
+  background: $secondary-accent;
+  border: 1px darken($black, 10%) solid;
+  @include transition(all .2s linear);
+}
+
+
