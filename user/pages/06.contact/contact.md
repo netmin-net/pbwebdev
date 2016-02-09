@@ -22,7 +22,7 @@ buttons:
 
 
 ## Postal
-<span class="fa-building-o fa"></span>&nbsp; 808 / 1 Kings Cross Rd, Darlinghurst, NSW, 2010<br/>
+<span class="fa-building-o fa"></span>&nbsp; Lvl 2 / 101 William Street, Darlinghurst, NSW, 2010<br/>
 <span class="fa-building-o fa"></span>&nbsp; PO Box 20472, World Square, NSW, 2002<br/>
 
 
