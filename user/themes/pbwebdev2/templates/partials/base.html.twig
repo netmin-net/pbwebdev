@@ -8,7 +8,7 @@
 {% include 'partials/metadata.html.twig' %}
 <title>{% if header.title %}{{ header.title|e('html') }} - {% endif %}{{ site.title|e('html') }}</title>
 <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />
-{#<link rel="canonical" href="{{ base_url_absolute }}{{ header.routes.canonical }}" />#}
+<link rel="canonical" href="{{ base_url_absolute }}{{ header.routes.canonical }}" />
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
 {% block stylesheets %}
@@ -58,7 +58,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-4 contact">
                 <h3>Contact</h3>
-                    <p><span class="fa fa-phone"></span> <a href="tel://02 8001 4947" title="">02 8003 4947</a><br/>
+                    <p><span class="fa fa-phone"></span> <a href="tel://+61280014947" title="">02 8003 4947</a><br/>
                         <span class="fa fa-envelope"></span>  <a href="mailto:mail@pbwebdev.com.au">mail@pbwebdev.com.au</a><br/><br/>
                         <span class="fa fa-map-marker"></span> Lvl 2 / 101 William Street<br/>Darlinghurst, NSW, 2010
                     </p>
@@ -106,7 +106,6 @@
         <div class="row">
             <p style="text-align: center;margin-top:2em;">PP Ventures Proprietary Ltd trading as PB Web Development -
                 Copyright &copy; {{ "now"|date("Y") }} - ACN: 166 043 492 - ABN: 46 166 043 492
-                <img src="https://engine.pbwebdev.com/mtracking.gif" width="1" height="1" alt="" />
             </p>
         </div>
     </div>

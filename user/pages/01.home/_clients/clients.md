@@ -8,7 +8,7 @@ portfolio:
       title: 2SER
       link: our-work/2ser
     - image: protecht.png
-      title: Protecht
+      title: Protecht Risk Solutions
       link: our-work/protecht
     - image: australian-government.png
       title: Australian Government

@@ -24,6 +24,8 @@ Icon?
 Thumbs.db
 *.swp
 
+user/config/system.yaml
+
 # phpstorm
 .idea/*
 *.zip
