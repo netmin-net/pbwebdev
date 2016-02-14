@@ -11,13 +11,18 @@
 <link rel="canonical" href="{{ base_url_absolute }}{{ header.routes.canonical }}" />
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-{% block stylesheets %}
+    {% block stylesheets %}
 {% do assets.add('//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css',99) %}
+{% do assets.add('//fonts.googleapis.com/css?family=Open+Sans:400,700|Rokkit',99) %}
 {#{% do assets.add('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css',99 ) %}#}
 {% do assets.add('theme://css-compiled/theme.css',98) %}
 {% endblock %}
 {{ assets.css() }}
 {% endblock head%}
+
+    <style type="text/css">
+        #breadcrumbs{height:3rem;line-height:3rem;padding-left:3rem;}#breadcrumbs span{display:inline-block;padding:0 1rem;}#breadcrumbs span:first-child{padding-left:0;}#breadcrumbs i{display:inline-block;width:20px;text-align:center;}
+    </style>
 
 </head>
 

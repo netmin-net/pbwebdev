@@ -1,2 +1,2 @@
 #!/bin/sh
-scss --sourcemap --watch scss:css-compiled
+scss --sourcemap --watch --style compressed scss:css-compiled

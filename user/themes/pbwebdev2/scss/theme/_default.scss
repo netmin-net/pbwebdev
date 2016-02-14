@@ -166,7 +166,7 @@ body {
 
 // OUR WORK
 .our-work{
-  padding:3em 0 0 0;
+  padding:5em 0 4em 0;
   h2{
     text-align: center;
   }
@@ -186,7 +186,6 @@ body {
   }
   footer{
     text-align: center;
-    background: $footer-bg;
     padding: 3em;
   }
   .view {
@@ -296,7 +295,7 @@ body {
 
 // WHAT WE DO
 .what-we-do{
-  padding:3em 0;
+  padding:5em 0;
 
   h2{
     text-align: center;
@@ -321,6 +320,7 @@ body {
 //ABOUT
 .about{
   background: $third-accent;
+  padding: 2em 0;
 
   h2{
     text-align: center;
@@ -543,7 +543,7 @@ body {
     }
   }
   li.recent-posts{
-      margin-bottom: 1.5em;
+      margin-bottom: 1em;
   }
 }
 

@@ -44,12 +44,12 @@ class BreadcrumbsPlugin extends Plugin
      */
     public function onTwigSiteVariables()
     {
-        require_once __DIR__ . '/classes/breadcrumbs.php';
+//        require_once __DIR__ . '/classes/breadcrumbs.php';
+//
+//        $this->grav['twig']->twig_vars['breadcrumbs'] = new Breadcrumbs($this->config->get('plugins.breadcrumbs'));
 
-        $this->grav['twig']->twig_vars['breadcrumbs'] = new Breadcrumbs($this->config->get('plugins.breadcrumbs'));
-
-        if ($this->config->get('plugins.breadcrumbs.built_in_css')) {
-            $this->grav['assets']->add('plugin://breadcrumbs/css/breadcrumbs.css');
-        }
+//        if ($this->config->get('plugins.breadcrumbs.built_in_css')) {
+//            $this->grav['assets']->add('plugin://breadcrumbs/css/breadcrumbs.css');
+//        }
     }
 }
