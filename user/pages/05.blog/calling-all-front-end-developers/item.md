@@ -18,7 +18,20 @@ metadata:
     description: We're hiring frontend web developers with experience in WordPress and Joomla.
     keywords: Work with us, employment
     robots: index, follow
+    og:
+        title: We're on the hunt for more frontend developers and sitebuilders
+        type: Article
+        url: https://pbwebdev.com/blog/calling-all-frontend-developersg
+    fb:
+        app_id: 749941768443494
+    'twitter:card' : We're hiring frontend web developers with experience in WordPress and Joomla.
+    'twitter:site' : @pbwebdev
+    'twitter:title' : Come join the PB Web Development team as a frontend developer
+    'twitter:description' : We're hiring frontend web developers with experience in WordPress and Joomla.
+cache_enable: true
 ---
+![Are you a wild west coyboy/cowgirl coder?](wild-west-frontend-developers.jpg)
+
 We're currently doing some awesome stuff at the moment, and we're looking for more frontend web developers to help out and join our current team of developers.
 
 We're specifically looking for skilled frontend developers with experience in WordPress and Joomla. You can be anywhere in the world to work with our team but we do prefer people that can work within our timezone of +11GMT with a +/-2 hour difference. This covers a band of developers from Fiji and the Pacific Islands, Australia to the Philippines, Vietnam and Singapore.  

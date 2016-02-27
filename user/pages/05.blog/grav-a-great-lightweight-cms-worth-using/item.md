@@ -17,7 +17,7 @@ metadata:
     'twitter:site' : @pbwebdev
     'twitter:title' : Grav CMS Review for Small Business
     'twitter:description' : Grav, super lightweight and simple CMS perfect for small business websites, blogs and landing page building.
-cache_enable: false
+cache_enable: true
 visible: true
 summary:
     enabled: '1'
