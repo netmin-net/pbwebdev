@@ -38,7 +38,7 @@ We're willing to also take on a junior in this role that is looking to upskill t
 
 You will be required to work from the PB Web Development office in Darlinghurst and within client premises around the CBD.
 
-The role:
+## The role:
 
 * Systems architect should be able to scope the project based off client specifications and be expected to work with key team members and stakeholders as project manager and project team leader
 * Understand business requirements and liaise with customers in order to build business logic into the project.
