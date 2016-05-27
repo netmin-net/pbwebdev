@@ -10,12 +10,19 @@ staff:
     - image: jana-krcmarova.jpg
       title: Jana Krcmarova
       text: Graphic &amp; web designer
+    - image: karlo-ilanos.jpg
+      title: Karlo Llanos
+      text: Frontend Developer
+    - image: alex-corzo.jpg
+      title: Alex Corzo
+      text: Systems Architect & Senior PHP Developer
     - image: male.png
       title: Dion Moult
-      text: PHP Developer &amp; Dev Ops
+      text: Senior Systems Architect
     - image: male.png
-      title: Karlo Llanos
-      text: Front End Dev
+      title: Armando Ruiz
+      text: Frontend Developer
+          
 ---
 We're not a huge agency but we work on some pretty big and exciting web design and development projects. Keeping it small makes sure we can give our projects and clients the attention they needs.
 

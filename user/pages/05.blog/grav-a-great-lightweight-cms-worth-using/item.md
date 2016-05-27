@@ -1,6 +1,7 @@
 ---
 title: 'Grav: A great Lightweight CMS Worth Using'
 published: true
+date: 01-11-2015
 publish_date: '01-11-2015 00:00'
 metadata:
     description: Grav, super lightweight and simple CMS perfect for small business websites, blogs and landing page building.
